@@ -31,7 +31,8 @@ def cast_vote(poll_id):
 
         ##Simple Duplicate vote check using IP address
         # very basic, not bulletproof solution
-        voter_id = request.remote_addr # Getting clients IP address
+        #voter_id = request.remote_addr # Getting clients IP address
+        vote_id = data.get('userIP')
 
         conn = database.get_db()
         cursor = conn.cursor()
