@@ -1,4 +1,4 @@
-**Polling system backend**
+## Polling system backend
 
 **Dependencies:**
 
